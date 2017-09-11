@@ -1,0 +1,23 @@
+name: memebot
+version: 0.1.0
+
+authors:
+  - Rubi Jihantoro  <jihantoro8@gmail.com>
+
+dependencies:
+  modest:
+    github: kostya/modest
+  myhtml:
+    github: kostya/myhtml
+  db:
+    github: crystal-lang/crystal-db
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+targets:
+  memebot:
+    main: src/memebot.cr
+
+crystal: 0.23.1
+
+license: MIT
