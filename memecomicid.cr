@@ -27,7 +27,7 @@ def getMeme(i)
         t = title[i]
         puts "[INSERT] #{t} - #{Time.now}"
         date = Time.now.epoch
-        li = img.split("/").last.to_s + Time.now.epoch.to_s + ".jpg"
+        li = img.split("/").last.to_s + Time.now.epoch.to_s + ".jpg" # bad name
         d = HTTP::Client.get img
         d.success? ? downloadImage(li, d.body) : puts "Fail save image"
         Data.exec "insert into main_posts (title,image,date,ukey,localimage) values (?,?,?,?,?)", t, img, date, id, li
