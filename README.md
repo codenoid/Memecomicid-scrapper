@@ -7,6 +7,6 @@ This scrapper pointed to AJAX Request,
 1. Download Image (Meme)
 2. Save some data to SQLITE DB
 
-we :love: Meme Comic
+we :hearth: Meme Comic
 
 [Rubi Jihantoro](https://github.com/codenoid) 
